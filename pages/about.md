@@ -14,7 +14,10 @@ With interest in cool algorithms, popular software practices and sexy bleeding e
 **Ohloh Profile:**  [![Ohloh profile for marcelvaldez][]](https://www.ohloh.net/accounts/142060?ref=Detailed) 
 [Ohloh profile for marcelvaldez]: https://www.ohloh.net/accounts/142060/widgets/account_detailed.gif
 
-**Linked**[![][1]](http://www.linkedin.com/in/marcelvaldez)
-[1]: http://marcel.bowlitz.org/wp-content/plugins/about-me-3000/linkedin.png
+[**LinkedIn Account**](http://www.linkedin.com/in/marcelvaldez)
+  
+[**Github Account**](http://github.com/marcel-valdez)
 
+[**Résumé**]({{urls.media}}/mi_curriculum.pdf)
+  
 **Contact me**: marcel(dot)valdez(at)live(dot)com
