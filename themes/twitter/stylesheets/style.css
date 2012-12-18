@@ -1,6 +1,6 @@
 /* Override some defaults */
 html, body {
-  background-color: #eee;
+  background-color: #eee;  
 }
 .navbar {
   margin-bottom: 0;
@@ -16,8 +16,11 @@ html, body {
 }
 
 /* The white background content wrapper */
-.content {
-  background-color: #fff;
+.content {    
+  font-size:1.1em;
+  line-height: 1.5em;
+  color: #272822;
+  background-color: #FAFAFA;
   padding: 20px;
   margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
   -webkit-border-radius: 0 0 6px 6px;
@@ -26,6 +29,12 @@ html, body {
   -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
      -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
           box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+.content p {    
+  color: #272822;
+  font-size:1.1em;
+  line-height: 1.5em;
 }
 
 /* Page header tweaks */
@@ -48,7 +57,7 @@ html, body {
 }
 .post > .more {
   margin:10px 0;
-  text-align:left;
+  text-align:left;  
 }
 
 /* tag_box ======================================================== */
