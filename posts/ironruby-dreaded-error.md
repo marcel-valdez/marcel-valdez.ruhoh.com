@@ -5,26 +5,27 @@ description: 'How to survive the IronRuby "Method not found" error'
 categories: [ironruby, .net, 'method not found']
 ---
 
-So you create a very basic IronRuby application, a simple Hello World:
+This post is related to this [StackOverflow question](http://stackoverflow.com/q/13392178/697862).
 
-````
-puts 'Hello world!'
-````
+**UPDATE**: This is fixed in the master branch if IronLanguages repo, check the footer [note](#note).
+  
+Maybe you've had it, and maybe not, but if you have, then you know how horrible it is when IronRuby gives you this totally unrelated error, for no apparent reason:
 
-Everything is great and beautiful as you expected. Next you try something pretty straight forward, now you try the simplest thing possible, create a new object. (Or run a sample project)
+To put things in context imagine you create a very basic IronRuby application, a very simple Ruby script:
 
 ````
 obj = Object.new
 ````
 
 And then Boom! You get something like this:
+
 ````
 Method not found: 'Microsoft.Scripting.Actions.Calls.OverloadInfo[] 
 Microsoft.Scripting.Actions.Calls.ReflectionOverloadInfo.CreateArray
 (System.Reflection.MemberInfo[])
 ````
 
-WTF is going on? It seems IronRuby 1.1.3 came with a strange bug where you can't call Object.new even though if you run ir.exe it says it clearly has a new class method:
+WTF is going on? It seems IronRuby 1.1.3 came with a strange bug where you can't call Object.new even though if you run ir.exe it says System::Object clearly has a .new class method:
 
 ````
 IronRuby 1.1.3.0 on .NET 4.0.30319.17929
@@ -45,4 +46,4 @@ obj = Object.new
 ````
 Run this code, and the world makes sense again. Prepend those 4 lines to any IronRuby project (including the samples) and everything will work correctly.
 
-Enjoy!
+<a id="note"></a> **NOTE**: Although this change does fix many applications, it does not fix others, like rubygems. This Object.new bug is fixed in the most recent version of IronRuby that you can get from the [IronRuby github repo](https://github.com/IronLanguages/main/).
