@@ -1,6 +1,8 @@
 ---
-title : About Me
+title: About Me
+date: '2013-07-02'
 description:
+tags: []
 ---
 
 Hello, my name is Marcel Valdez Orozco. I graduated with a BSc in Computer Science, and I’m currently (Sep 2011 – May 2013) a full-time student in a MSc in Software and Information Technology program.
