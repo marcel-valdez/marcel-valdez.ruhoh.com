@@ -5,7 +5,7 @@ description:
 tags: []
 ---
 
-Hello, my name is Marcel Valdez Orozco. I graduated with a BSc in Computer Science, and I’m currently (Sep 2011 – May 2013) a full-time student in a MSc in Software and Information Technology program.
+Hello, my name is Marcel Valdez Orozco. I graduated with a BSc in Computer Science, and I’m currently (Sep 2011 – May 2013) a candidate graduate for a MSc in Software and Information Technology program at [ITESM](http://www.itesm.edu/).
 
 I’m the kind of dev who likes to use and learn the best possible practices, but is pragmatic enough to know that it is not always possible to use them.
 
