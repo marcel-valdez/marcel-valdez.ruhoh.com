@@ -60,13 +60,13 @@ Understanding the principles gives you the opportunity to create practices that 
   - Example: I write automated tests that benefit me now and future programmers as well.
   - Counter Example: I write extensive documentation that does *not* benefit me now, but benefits an unknown person later *if* documentation is up-to-date.
   - Example: I refactor to remove accidental complexity to achieve
-    - Giving me both satisfactions and fewer defects
-    - Making the code easier to understand for those who encounter it later
-    - Produce features faster in the short and medium term future.
+      - Giving me both satisfaction and fewer defects
+      - Making the code easier to understand for those who encounter it later
+      - Produce features faster in the short and medium term future.
 - **Self-Similarity**
   - Try copying the structure of one solution into a new context, even at different scales.
   - This applies to work flows, design patterns and architecture styles.
-  - Examples are using writing user stories first for epics, then writing test cases first for user stories, and then write automated tests and work your way up. The pattern of test-first can be applied at all levels of abstraction (self-similarity).
+  - Examples are writing user stories first for epics, then writing test cases first for user stories, and then write automated tests and work your way up. The pattern of test-first can be applied at all levels of abstraction (self-similarity).
 - **Improvement**
   - In software development *perfect* is a verb, not an adjective. No process, design or story is perfect. You can, however, perfect your process, design and stories.
   - Excellence is achieved by means of continuous improvement.
@@ -93,7 +93,7 @@ Understanding the principles gives you the opportunity to create practices that 
 - **Redundancy**
   - The critical, difficult problems in software development should be solved in several different ways; that way, even if one solution fails utterly, the other solutions will prevent *disaster*.
   - Example: Defects are a critical and difficult problem and they are addressed by many XP Practices: pair programming, continuous integration, sitting together, real costumer involvement, daily deployment, and TDD. These practices are certainly redundant, catching some of the same defects.
-  - You cannot solve a complex and critical problem with a single practice, instead you follow redundant practices to reduce or resolve it.
+  - You cannot solve a complex and critical problem with a single practice, instead you follow redundant practices to reduce or fix completely.
 - **Failure**
   - If you are having trouble succeeding, fail. Failure is not a waste if it imparts knowledge. Knowledge is valuable and sometimes hard to come by, sometimes it requires failure.
   - Do the cheapest thing that can gain you knowledge about the problem you don't know how to solve yet.

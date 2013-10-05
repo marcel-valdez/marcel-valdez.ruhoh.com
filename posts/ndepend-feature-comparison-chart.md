@@ -27,7 +27,7 @@ The characteristics I was looking for in a code analysis tool where:
   - Enumeration of classes, abstract classes and interfaces
 
   > **Rationale**: This features are needed in order to perform the code analysis, because that will provide the data we will measure and evaluate. With those features it is possible to obtain all the Chidamber & Kemerer metric suite which are fundamental for code analysis.  
-  > **Acceptance Criteria**: A proof of concept that can obtain perform each and one of the features programmatically.
+  > **Acceptance Criteria**: A proof of concept that can obtain each and one of the listed items programmatically.
 
 4. #### The extracted code model must be readable in-memory, directly or indirectly.
   - It is allowed for the tool to generate a file first and then read that file to generate an in-memory model
@@ -49,8 +49,8 @@ The characteristics I was looking for in a code analysis tool where:
 
 1. Very low compliance (Very small part or nothing of the proof of concept can be implemented)
 2. Low compliance (Some parts of the proof of concept cannot be implemented)
-3. Medium compliance (Possible to the proof of concept with a lot of extra code)
-4. High compliance (Can implement the requirement the proof of concept)
+3. Medium compliance (Possible to implement the proof of concept with a lot of extra code)
+4. High compliance (Can implement the proof of concept with *some* extra code)
 5. Very high compliance (Easy to implement the proof of concept)
 
 ### Overview
@@ -137,7 +137,7 @@ The characteristics I was looking for in a code analysis tool where:
 - It can process any strongly typed .net language: C++, C#, VB, J#, JScript.Net
 - NDepend can be called programmatically via its NDepend.API by using the NDependProvider class and IProjectManager and IProject classes respectively.
 - The NDepend.API exposes an easy to 'analyze' interface that allows the programmer to write queries over code structure in a fluent way, it also comes with many extensions for filtering and navigating code structure, and calculating metrics.
-- The code model, the analysis and results generated programmatically with the NDepend.API can be manipulated in-memory and stored to a file, by using the NDepend.API (no need to code it).
+- The code model, the analysis and results generated programmatically with the NDepend.API can be manipulated in-memory and stored to a file, by using the NDepend.API.
 
 
 ### Detailed analysis for [Nitriq](http://nitriq.com)
@@ -150,16 +150,16 @@ The characteristics I was looking for in a code analysis tool where:
 ### Detailed analysis for [iPlasma](http://loose.upt.ro/reengineering/research/iplasma‎)
 
 - It uses an intermediary meta-model representation of the design, currently there are extractors for Java, C++ and C#. It is possible to write another extractor for any other language needed.
-- Its too complicated, a proof of concept test could not be programmed because there is not sufficient documentation on the iPlasma project to invoke it programmatically. Also, it is unknown if it is legal to do this according to their License Terms (which I did not find).
-- The Visual Tool can obtain every specification in this requirement, and more; because the visual tool comes with previously programmed 'plugins'.
-- The model is extracted direcly from source code, and is represented in a modeling language called MEMORIA.
+- Its too complicated, a proof of concept test could not be programmed because there is not sufficient documentation on the iPlasma project. It is unknown if it is legal to do this according to their License Terms (which I did not find).
+- The visual tool can obtain every specified item for requirement #3, and more; because the visual tool comes with previously programmed 'plugins'.
+- The model is extracted directly from source code, and is represented in a modeling language called MEMORIA.
 
 ### Detailed analysis for [Microsoft CCI + AST](http://cciast.codeplex.com/)
 
 - It can process any static .Net language that is compiled to MSIL:C++, C#, VB, J#, JScript.Net.
-- It can be invoked programmatically without the need of the CLI; but it requires a lot of code to do the simplest of things like the methods in a class.
-- Complies with the requirement, and its API is written to do code analysis. The problem is that there very little or outdated documentation for its API.
--  The model is totally generated in-memory, without an intermediary format.
+- It can be invoked programmatically without the need of the CLI; but it requires a lot of code to do the simplest of things like get the methods in a class.
+- Complies with requirement #3, and its API is written to do code analysis. The problem is that there is very little or outdated documentation for its API.
+- The model is totally generated in-memory, without an intermediary format.
 
 ### Detailed analysis for [Microsoft Project Roslyn](http://msdn.microsoft.com/en-us/vstudio/hh500769.aspx)
 
@@ -171,6 +171,6 @@ The characteristics I was looking for in a code analysis tool where:
 
 ## Conclusion: NDepend wins
 
-NDepend is clearly the best choice for code analysis projects, thanks to its API for fluently writing queries over NDepend's extracted code model, you can start writing any code structure and code metrics based rules right away
+NDepend is clearly the best choice for a project with the requirements specified at the beginning of this article, thanks to its API for fluently writing queries over NDepend's extracted code model, you can start implementing any code structure or metrics based analysis right away.
 
-Now, if you don't have the $$$ to get a NDepend license, then Microsoft's CCI + AST open source project is a decent option, but get ready for writing a lot of code for any code metrics or code structure based rule, from what I determined, an extra layer of abstraction over CCI + AST is needed in order to do anything useful with it.
+If you don't have the $$$ to get a NDepend license, then Microsoft's CCI + AST open source project is a decent option, but get ready to write a lot of code to extract any code metrics or structure from a program (.dll), from what I determined, an extra layer of abstraction over CCI + AST is needed in order to do anything useful with it.
