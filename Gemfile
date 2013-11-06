@@ -16,5 +16,5 @@ gem 'ruhoh', "~> 2"
 # For additional language support, make sure you load the appropriate gems.
 # See: https://github.com/sstephenson/sprockets#readme
 #
-# gem 'sprockets', '~> 2.8'
-# gem 'sass'
+gem 'sprockets', '~> 2.8'
+gem 'sass'

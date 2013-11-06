@@ -1,5 +1,5 @@
 ---
-title: "WinRBDI Syntax on Notepad++"
+title: "WinRDBI Syntax Highlighting on Notepad++"
 date: '2012-12-18'
 description:
 categories: [notepad++, syntax, programming, academic]
