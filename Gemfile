@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 gem 'json'
-gem 'psych', "~> 1.3"
-gem 'ruhoh', "~> 2"
+gem 'psych'
+gem 'ruhoh'
 
 # To enable asset packaging and processing via sprockets:
 #
@@ -16,5 +16,5 @@ gem 'ruhoh', "~> 2"
 # For additional language support, make sure you load the appropriate gems.
 # See: https://github.com/sstephenson/sprockets#readme
 #
-gem 'sprockets', '~> 2.8'
+gem 'sprockets'
 gem 'sass'
