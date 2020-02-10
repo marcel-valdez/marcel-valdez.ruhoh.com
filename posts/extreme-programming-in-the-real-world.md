@@ -21,7 +21,7 @@ Values do not provide concrete advice about what to do in software development. 
   - Communication is important for creating a sense of team and effective cooperation.
   - The objective of communication is to transfer knowledge and information between the team(s).
 - **Simplicity**
-  - Simplicity is the most intensely intellectual of the XP values. 
+  - Simplicity is the most intensely intellectual of the XP values.
   - The objectives are to make a system simple enough to gracefully solve only today's problem and eliminate the waste of unnecessary complexity. 
   - It is also important to remember that simplicity is contextual, the design must be understandable by the team working on it, otherwise it is pointless.
 - **Feedback**
@@ -76,7 +76,7 @@ Understanding the principles gives you the opportunity to create practices that 
   - Good Conflict is an opportunity, not a problem, as long as the team resolves it productively.
   - Diversity is expressed in the practice of *Whole Team*, where you bring together on the team people with a variety of skills and perspectives.
 - **Reflection**
-  - Good teams thinks think about *how* they are working and *why* they are working. 
+  - Good teams thinks think about *how* they are working and *why* they are working.
   - Good teams analyze why they succeeded or failed; they don't try to hide their mistakes, but expose them and actively learn from them.
   - Reflection are observations on a team's **actions**. Learning is action reflected. To maximize feedback, reflection in XP teams is mixed with doing.
   - Reflection is the Observation and Conclusion phases of the Scientific Method. One cannot reflect without an empiric experiment (a team's actions).
