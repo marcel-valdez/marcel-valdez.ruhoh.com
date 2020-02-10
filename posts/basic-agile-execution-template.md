@@ -11,7 +11,10 @@ I propose a starting point for teams to begin their Agile journey, I believe thi
 start from but absolutely not a good end-goal. Teams should use this template and iterate on it
 until they have their own agile process that enables them to execute with peak throughput.
 
-![]({{urls.media}}/basic_agile_template.png)
+<div class="wideimg-container">
+<img class="wideimg" src="{{urls.media}}/basic_agile_template.png" />
+</div>
+
 
 The primary design principle for this template is to maximize the amount of value a team can deliver
 during a "cycle" (e.g. a sprint), in other words, it maximizes for throughput, with the
