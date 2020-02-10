@@ -74,3 +74,18 @@ a.fn-link {
   font-size: 0.8em;
   line-height: 0;
 }
+
+/* custom */
+
+.wideimg-container {
+  text-align: center;
+  display: table-cell;
+}
+
+.wideimg {
+  max-height: fit-content;
+  max-width: 1040px;
+  width: auto;
+
+  margin-left: calc(100% / -4);
+}
