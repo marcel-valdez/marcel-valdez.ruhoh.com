@@ -1,2 +1,4 @@
 compiled/*
 Gemfile.lock
+posts/drafts/*.html
+posts/*.html
